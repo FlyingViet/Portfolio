@@ -86,7 +86,6 @@ export default function Experience() {
                                         }
                                     />
                                 </ListItem>
-                                {index === jobs.length-1 ? null : <Divider variant="inset" component="li" />}
                             </div>
                         )
                     })}
