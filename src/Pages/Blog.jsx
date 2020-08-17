@@ -3,6 +3,7 @@ export default function Blog() {
 
     return (
     <div>
-        <h2>Blog</h2>
+        <h1>Under Construction</h1>
+        Please check again later.
     </div>)
 }
