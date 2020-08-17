@@ -17,7 +17,7 @@ export default function Intro() {
                 </div>
                 <div className="description">
                     <h2>Hi! I'm Brian.</h2>
-                    I'm from Wisconsin and I graduated from University of Wisconsin - Milwaukee. <br/>
+                    I'm from Wisconsin and I am graduating from University of Wisconsin - Milwaukee. <br/>
                     I am majoring in Computer Science. <br/><br/>
                     I love coding, eating, taking pictures, and traveling. I hope that someday I will be able to capture all the great moments in my life.
                 </div>
