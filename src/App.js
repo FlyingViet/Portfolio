@@ -1,10 +1,11 @@
 import React from 'react';
 import {
   Router,
-  Route
+  Route,
+  Switch
 } from "react-router-dom";
 import './App.css';
-import { Blog, Home } from './Pages/index';
+import { Blog, Home, UnderConstruction } from './Pages/index';
 import { createBrowserHistory } from "history";
 import { Header } from './Components/index';
 
@@ -15,8 +16,11 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Header/>
-        <Route exact path="/" component={Home}/>
-        <Route path="/Blog" component={Blog}/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          {/* <Route path="/Blog" component={Blog}/> */}
+          <Route path="*" component={UnderConstruction}/>
+        </Switch>
       </Router>
       
     </div>
