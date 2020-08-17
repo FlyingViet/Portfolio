@@ -29,7 +29,7 @@ export default function Header() {
                     <a href="https://github.com/FlyingViet/" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </section>
                 <section className="header-bottom__email">
-                    <Link to="/BrianResume.pdf" target="_blank" download>Resume</Link>
+                    <Link to="/BrianResume.pdf" target="_blank">Resume</Link>
                 </section>
                 <section className="header-bottom__email">
                     <a href="mailto: brihoang1995@gmail.com">Email Me</a>
