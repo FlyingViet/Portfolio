@@ -1,8 +1,8 @@
 import React from 'react';
 import { Experience, Intro } from '../Components/index.js'
 import '../css/About.css';
-export default function Home() {
 
+export default function Home() {
     return (
         <div>
             <div className="work-padding">
