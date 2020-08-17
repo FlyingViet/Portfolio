@@ -28,5 +28,6 @@
 }
 
 .wrap {
-    white-space: pre-wrap;
+    white-space: pre-line;
+    width: 33%;
 }

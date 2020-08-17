@@ -10,10 +10,6 @@ body {
   height: 100%;
 }
 
-p {
-  word-break: break-all;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
