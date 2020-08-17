@@ -5,13 +5,13 @@ import '../css/About.css';
 export default function Home() {
     return (
         <div>
-            <div className="work-padding">
-                <div className="intro">
+            <div className="intro">
+                <center>
                     <Intro/>
-                </div>
-                <div className="work-space">
-                    <Experience/>
-                </div>
+                </center>
+            </div>
+            <div className="work-space">
+                <Experience/>
             </div>
         </div>
     )

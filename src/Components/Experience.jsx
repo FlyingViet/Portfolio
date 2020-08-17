@@ -43,8 +43,8 @@ export default function Experience() {
     const useStyles = makeStyles((theme) => ({
         root: {
           width: '100%',
-          maxWidth: '75ch',
           backgroundColor: theme.palette.background.paper,
+          display: 'flex'
         },
         inline: {
           display: 'inline',
@@ -90,7 +90,6 @@ export default function Experience() {
                             </div>
                         )
                     })}
-
                 </List>
             </div>
         </div>
