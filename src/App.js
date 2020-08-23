@@ -21,7 +21,7 @@ function App() {
           <Route path="/Blog" component={Blog}/>
           <Route path="/Projects" component={Projects}/>
           <Route path="/Photography" component={Photography}/>
-          <Route path="*" component={UnderConstruction}/>
+          <Route exact path="*" component={UnderConstruction}/>
         </Switch>
       </Router>
       
