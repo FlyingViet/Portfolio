@@ -5,7 +5,7 @@ import {
   Switch
 } from "react-router-dom";
 import './App.css';
-import { Blog, Home, UnderConstruction } from './Pages/index';
+import { Blog, Home, UnderConstruction, Photography, Projects } from './Pages/index';
 import { createBrowserHistory } from "history";
 import { Header } from './Components/index';
 
@@ -19,6 +19,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/Blog" component={Blog}/>
+          <Route path="/Projects" component={Projects}/>
+          <Route path="/Photography" component={Photography}/>
           <Route path="*" component={UnderConstruction}/>
         </Switch>
       </Router>

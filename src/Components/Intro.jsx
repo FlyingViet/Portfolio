@@ -8,7 +8,7 @@ export default function Intro() {
             <div className="intro">
                 <div className="image">
                     <center>
-                        <img src={brian} alt="Brian"/>
+                        <img className='img' src={brian} alt="Brian"/>
                         <div>
                             <h2>Brian Hoang</h2>
                             <p>Software Engineer</p>
