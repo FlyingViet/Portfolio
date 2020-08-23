@@ -1,5 +1,4 @@
 import React from 'react';
-import discord from '../Images/discordbot.png';
 
 export default function Projects() {
     return (
