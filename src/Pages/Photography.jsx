@@ -3,7 +3,7 @@ import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import useSWR from 'swr'
 
-export default function Photography() {
+export default function Photography(props) {
     const [currentImage, setCurrentImage] = useState(0);
     const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -34,7 +34,7 @@ export default function Photography() {
 
     return (
     <div>
-        <Gallery photos={images} onClick={openLightbox} />
+        <Gallery photos={props.images} onClick={openLightbox}/>
         <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
