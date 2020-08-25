@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import useSWR from 'swr'
 
 export default function Photography(props) {
     const [currentImage, setCurrentImage] = useState(0);
