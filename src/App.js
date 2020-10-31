@@ -37,6 +37,7 @@ function App() {
           <Route exact path="/Blog" component={Blog}/>
           <Route exact path="/Projects" component={Projects}/>
           <Route exact path="/Photography" component={() => <Photography images={images}/>}/>
+          <Route exact path="/googleb7df0f449946f48f.html" render={() => {window.location.href="googleb7df0f449946f48f.html"}}/>
           <Route exact path="*" component={UnderConstruction}/>
         </Switch>
       </Router>
