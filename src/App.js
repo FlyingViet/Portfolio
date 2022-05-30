@@ -5,7 +5,7 @@ import {
   Switch
 } from "react-router-dom";
 import './App.css';
-import { Blog, Home, UnderConstruction, Photography, Projects } from './Pages/index';
+import { Blog, Home, UnderConstruction, Photography, Projects, Test} from './Pages/index';
 import { createBrowserHistory } from "history";
 import { Header } from './Components/index';
 import useSWR from 'swr'
@@ -37,6 +37,7 @@ function App() {
           <Route exact path="/Blog" component={Blog}/>
           <Route exact path="/Projects" component={Projects}/>
           <Route exact path="/Photography" component={() => <Photography images={images}/>}/>
+          <Route exact path="/Test" component={Test}/>
           <Route exact path="/googleb7df0f449946f48f.html" render={() => {window.location.href="googleb7df0f449946f48f.html"}}/>
           <Route exact path="*" component={UnderConstruction}/>
         </Switch>

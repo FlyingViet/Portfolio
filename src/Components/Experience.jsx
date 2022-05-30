@@ -7,14 +7,27 @@ export default function Experience() {
     const jobs = [
         {
             name: "Amazon", 
-            role: "Software Engineer Intern",
+            role: "Software Development Engineer",
+            avatar: amazon,
+            site: "https://amazon.com",
+            description:           
+            "∙ Created security controls for Alexa Voice Data built on AWS services such as API Gateway, Lambda, EC2, and Fargate \n" +
+            "∙ Created audit controls for Alexa Voice Data allowing for automated testing for reliability, accuracy, and privacy which reduced manual auditing by over 25%. \n" +
+            "∙ Migrated internal service onto AWS cloud services reducing tickets by 75%. \n" +
+            "∙ Led cross-team projects and improved documentation to reduce operational load by over 50%. \n" + 
+            "∙ Managed team resources to solve problems quickly and efficiently by pulling in the necessary service owners."
+        },
+        {
+            name: "Amazon", 
+            role: "Software Development Engineer Intern",
             avatar: amazon,
             site: "https://amazon.com",
             description:           
             "∙ Designed and created internal facing APIs on AWS that dynamically created documentation from internal policies. \n" +
             "∙ Implemented a dashboard with React which utilized the API for internal customers to increase workflow productivity. \n" +
-            "∙ Eliminated errors in wiki, hours of manual entry after changes, and hours of explaining policies to stakeholders. \n" +
-            "∙ Created documentation for onboarding process to another internal team for hosting API and web application."
+            "∙ Eliminated manual developer work to update documentation, inform policy owners, and to monitor releases by 100%. \n" +
+            "∙ Updated and maintained documentation leading to reduction of onboarding question tickets by 50%. \n" + 
+            "∙ Held knowledge transfer sessions to assist teammates onboard onto the platform and teach the concepts of React and TypeScript."
         },
         {
             name: "Quad Graphics",
