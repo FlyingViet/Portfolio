@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, ListItem, Divider, ListItemText, ListItemAvatar, Typography, makeStyles, Avatar } from '@material-ui/core';
+import { ListItem, Divider, ListItemText, ListItemAvatar, Typography, makeStyles, Avatar } from '@material-ui/core';
 import { amazon, quad, vcpi } from '../Images/index.js';
 import '../css/About.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader

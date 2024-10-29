@@ -1,7 +1,6 @@
 import React from 'react';
 import { brian } from '../Images/index';
 import '../css/Intro.css';
-import Experience from './Experience';
 
 export default function Intro() {
     return(
