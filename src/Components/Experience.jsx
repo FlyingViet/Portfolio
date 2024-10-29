@@ -2,6 +2,8 @@ import React from 'react';
 import { List, ListItem, Divider, ListItemText, ListItemAvatar, Typography, makeStyles, Avatar } from '@material-ui/core';
 import { amazon, quad, vcpi } from '../Images/index.js';
 import '../css/About.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 export default function Experience() {
     const jobs = [
@@ -68,10 +70,21 @@ export default function Experience() {
 
     return(
         <div>
+            <div>
+                <h3>My Amazon Favorites</h3>
+                <center>
+                    <div>
+                        <h3>
+                            Jisulife Portable Fan
+                        </h3>
+                        <a href='https://amzn.to/4hpuqYo'>https://amzn.to/4hpuqYo</a>
+                    </div>
+                </center>
+            </div>
             <div className="work">
                 <h3>My Work Experience</h3>
                 <Divider variant="inset" component="li"/>
-                <List className={classes.root}>
+                {/* <List className={classes.root}>
                     {jobs.map((job, index) => {
                         return(
                             <div key={index} className="wrap">
@@ -102,7 +115,41 @@ export default function Experience() {
                             </div>
                         )
                     })}
-                </List>
+                </List> */}
+                <center className='carousel'>
+                    <Carousel showArrows={true} width="40%" swipeable={true} useKeyboardArrows={true} autoPlay={true} stopOnHover={true} infiniteLoop={true} showStatus={false}>
+                    {jobs.map((job, index) => {
+                            return(
+                                <div key={index} className="wrap">
+                                    <ListItem alignItems="flex-start" key={index}>
+                                        <ListItemAvatar>
+                                            <a href={job.site} target="_blank" rel="noreferrer noopener">
+                                                <Avatar alt={job.name} src={job.avatar} />
+                                            </a>
+                                        </ListItemAvatar>
+                                        <ListItemText 
+                                            primary={job.name}
+                                            secondary={
+                                                <React.Fragment>
+                                                    <Typography
+                                                        component="span"
+                                                        variant="body2"
+                                                        color="textPrimary"
+                                                        className={classes.inline}
+                                                    >
+                                                        {job.role}
+                                                    </Typography>
+                                                    <br/>
+                                                    {job.description}
+                                                </React.Fragment>
+                                            }
+                                        />
+                                    </ListItem>
+                                </div>
+                            )
+                        })}
+                    </Carousel>
+                </center>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import { brian } from '../Images/index';
 import '../css/Intro.css';
+import Experience from './Experience';
 
 export default function Intro() {
     return(
@@ -21,6 +22,7 @@ export default function Intro() {
                     I graduated from UW-Milwaukee in 2020<br/><br/>
                     I love coding, eating, taking pictures, and traveling. I hope that someday I will be able to capture all the great moments in my life.
                 </div>
+                
             </div>
         </div>
     )
