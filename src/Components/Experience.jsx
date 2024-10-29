@@ -71,7 +71,6 @@ export default function Experience() {
     return(
         <div>
             <div>
-            <Divider variant="inset" component="li"/>
                 <h3>My Amazon Favorites</h3>
                 <center>
                     <div>
@@ -82,7 +81,6 @@ export default function Experience() {
                         <a href='https://amzn.to/4hpuqYo'>https://amzn.to/4hpuqYo</a>
                     </div>
                 </center>
-                <Divider variant="inset" component="li"/>
             </div>
             <div className="work">
                 <h3>My Work Experience</h3>
