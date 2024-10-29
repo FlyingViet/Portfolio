@@ -77,6 +77,7 @@ export default function Experience() {
                         <h3>
                             Jisulife Portable Fan
                         </h3>
+                        <h4>Great for raves</h4>
                         <a href='https://amzn.to/4hpuqYo'>https://amzn.to/4hpuqYo</a>
                     </div>
                 </center>
